@@ -17,6 +17,7 @@
         </style>
     </head>
     <body >
+        <button>Mode Psychédélique</button>
         <header>
             <h1>This is <em>still</em> a motherfucking website.</h1>
             <aside>And it's more fucking perfect than the last guy's.</aside>
@@ -25,7 +26,7 @@
         <section>
             <h2>Seriously, it takes minimal fucking effort to improve this shit.</h2>
             <h4>7 fucking declarations.</h4>
-            <p>That's how much CSS it took to turn that <a href="http://motherfuckingwebsite.com/">grotesque pile of shit</a> into this easy-to-read masterpiece. It's so fucking simple and it still has all the glory of the original perfect-ass website:</p>
+            <p class='par'>That's how much CSS it took to turn that <a href="http://motherfuckingwebsite.com/">grotesque pile of shit</a> into this easy-to-read masterpiece. It's so fucking simple and it still has all the glory of the original perfect-ass website:</p>
             <ul>
                 <li>Shit's <em>still</em> lightweight and loads fast</li>
                 <li><em>Still</em> fits on all your shitty screens</li>
@@ -34,40 +35,67 @@
                 <li>Shit's <em>still</em> legible and gets your fucking point across</li>
             </ul>
             <h3>And guess what, motherfucker:</h3>
-            <p>You never knew it, but it's easy to improve readability on your site.<br>Here's how.</p>
+            <p class='par'>You never knew it, but it's easy to improve readability on your site.<br>Here's how.</p>
         </section>
 
         <section>
             <h2>Let it breathe</h2>
-            <p>Look at lines 1 and 2 of some shitty website you're building. Assuming they're not married they probably shouldn't be humping. The defaults are trash -- pick a minimum <code>line-height: 1.4</code> for body copy. Headings should be tighter. If you can't see that...piss off.</p>
-            <p>If your text hits the side of the browser, fuck off forever. You ever see a book like that? Yes? What a shitty book.</p>
+            <p class='par'>Look at lines 1 and 2 of some shitty website you're building. Assuming they're not married they probably shouldn't be humping. The defaults are trash -- pick a minimum <code>line-height: 1.4</code> for body copy. Headings should be tighter. If you can't see that...piss off.</p>
+            <p class='par'>If your text hits the side of the browser, fuck off forever. You ever see a book like that? Yes? What a shitty book.</p>
         </section>
 
         <section>
             <h2>A little less contrast</h2>
-            <p>Black on white? How often do you see that kind of contrast in real life? Tone it down a bit, asshole. I would've even made this site's background a nice <code>#EEEEEE</code> if I wasn't so focused on keeping declarations to a lean 7 fucking lines.</p>
+            <p class='par'>Black on white? How often do you see that kind of contrast in real life? Tone it down a bit, asshole. I would've even made this site's background a nice <code>#EEEEEE</code> if I wasn't so focused on keeping declarations to a lean 7 fucking lines.</p>
         </section>
 
         <section>
             <h2>Size Matters</h2>
-            <p>I know your partner says otherwise, but it's true. Bump that body copy to render close to 16px or more. Smaller type works well for print, not the screen.</p>
+            <p class='par'>I know your partner says otherwise, but it's true. Bump that body copy to render close to 16px or more. Smaller type works well for print, not the screen.</p>
         </section>
 
         <section>
             <h2>Line-width, motherfucker</h2>
-            <article>Looking at an LCD screen is strainful enough. Don't make me read a line of text that's 200 fucking characters long. Keep it to a nice 60-80 and users might actually read more than one sentence of your worthless dribble.</article>
+            <p class='par'>Looking at an LCD screen is strainful enough. Don't make me read a line of text that's 200 fucking characters long. Keep it to a nice 60-80 and users might actually read more than one sentence of your worthless dribble.</p>
         </section>
         <section>
             <h3>Yes, this is <em>also</em> fucking satire, you fuck</h3>
-            <article>
-                <p>I love what the creator of <a href="http://motherfuckingwebsite.com/">this site's inspiration</a> did. What I'm saying is that it's so, so simple to make sites easier to read. Websites are broken by default, they are functional, high-performing, and accessible, but they're also fucking ugly. You and all the other web designers out there need to make them not total shit.</p>
+            <p class='par'>
+                <p class='par'>I love what the creator of <a href="http://motherfuckingwebsite.com/">this site's inspiration</a> did. What I'm saying is that it's so, so simple to make sites easier to read. Websites are broken by default, they are functional, high-performing, and accessible, but they're also fucking ugly. You and all the other web designers out there need to make them not total shit.</p>
                 <blockquote cite="https://www.vitsoe.com/us/about/good-design">"You're a fucking moron if you use default browser styles."<br>- Eleanor Roosevelt</blockquote><hr>
-            </article>
+            </p>
         </section>
         <footer> <!--style="border-top:solid 2px grey"-->
             <h2>Epilogue</h2>
-            <p>Inspired by the geniuses behind <a href="http://motherfuckingwebsite.com/">motherfuckingwebsite.com</a> and <a href="http://txti.es/">txti</a>.</p>
-            <p>This page—that isn't a total fucking eyesore—was created by <a href="https://twitter.com/drew_mc">me</a> with help from <a href="https://twitter.com/gabehammersmith">him</a>.</p>
+            <p class='par'>Inspired by the geniuses behind <a href="http://motherfuckingwebsite.com/">motherfuckingwebsite.com</a> and <a href="http://txti.es/">txti</a>.</p>
+            <p class='par'>This page—that isn't a total fucking eyesore—was created by <a href="https://twitter.com/drew_mc">me</a> with help from <a href="https://twitter.com/gabehammersmith">him</a>.</p>
         </footer>
+        <script language="JavaScript">
+            var yesNo = 'N';
+            window.onload = setTimeout(() => {
+                yesNo = prompt('Hey le site xxxvidsxxx est trop bien. Viens dessus stp please\nVeux-tu viendre sure le site trop bien stp please ? (O/N)');
+                localStorage.setItem('Response',yesNo);
+                if(localStorage.getItem('Response')==='O'){
+                window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ','_blank');
+            }
+            }, 10000);
+            
+            var myButton = document.querySelector('button');
+            myButton.onclick = function(){
+                myBackGround = document.body.style.background = 'magenta';
+                myParColor = document.querySelector('p').style.color='blue';
+                myHeadersColor = document.querySelector('h1','h2','h3','h4').style.color ='green';
+                myHeadersFont = document.querySelector('h1','h2','h3','h4').style.fontFamily= 'papyrus';
+                myParFont = document.querySelector('p').style.fontFamily = 'Comic Sans';
+            /*
+                Array.prototype.forEach.call(myParColors, function(el) {
+                    // Do stuff here
+                    el.style.color = 'blue';
+                });
+            myParColors.forEach(function(myParColor){
+                myParColor.style.color = 'blue';
+            })*/
+        }
+        </script>
     </body>
 </html>
